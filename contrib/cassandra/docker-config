@@ -1,0 +1,3 @@
+NAME=cassandra
+IMAGE=usql/cassandra
+PUBLISH=9042:9042

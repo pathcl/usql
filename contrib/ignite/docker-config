@@ -1,0 +1,3 @@
+NAME=ignite
+IMAGE=usql/ignite
+NETWORK=host

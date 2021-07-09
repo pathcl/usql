@@ -1,0 +1,6 @@
+ List of schemas
+ Schema | Catalog 
+--------+---------
+ sakila | def 
+(1 row)
+
