@@ -1,0 +1,54 @@
+---
+# named connections
+connections:
+  my_couchbase_conn: couchbase://Administrator:P4ssw0rd@localhost
+  my_clickhouse_conn: clickhouse://clickhouse:P4ssw0rd@localhost
+  css: cassandra://cassandra:cassandra@localhost
+  fsl: flightsql://flight_username:P4ssw0rd@localhost
+  gdr:
+    protocol: godror
+    username: system
+    password: P4ssw0rd
+    hostname: localhost
+    port: 1521
+    database: free
+  ign: ignite://ignite:ignite@localhost
+  mss: sqlserver://sa:Adm1nP@ssw0rd@localhost
+  mym: mysql://root:P4ssw0rd@localhost
+  myz: mymysql://root:P4ssw0rd@localhost
+  ora: oracle://system:P4ssw0rd@localhost/free
+  ore: oracle://system:P4ssw0rd@localhost:1522/db1
+  pgs: postgres://postgres:P4ssw0rd@localhost
+  pgx: pgx://postgres:P4ssw0rd@localhost
+  vrt:
+    proto: vertica
+    user: vertica
+    pass: vertica
+    host: localhost
+  sll:
+    file: /path/to/mydb.sqlite3
+  mdc: modernsqlite:test.db
+  dkd: test.duckdb
+  zzz: ["databricks", "token:dapi*****@adb-*************.azuredatabricks.net:443/sql/protocolv1/o/*********/*******"]
+  zz2:
+    proto: mysql
+    user: "my username"
+    pass: "my password!"
+    host: localhost
+    opts:
+      opt1: "😀"
+# init script
+init: |
+  \echo welcome to the jungle `date`
+  \set SYNTAX_HL_STYLE paraiso-dark
+  \set PROMPT1 '\033[32m%S%M%/%R%#\033[0m '
+  \set bar test
+  \set foo test
+  -- \set SHOW_HOST_INFORMATION false
+  -- \set SYNTAX_HL false
+  \set 型示師 '本門台初埼本門台初埼'
+# charts path
+charts_path: charts
+# defined queries
+queries:
+  q1:
